@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Blog
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = javascript_include_tag :defaults
+    = csrf_meta_tags
+  %body{:style => "background: #EEEEEE;"}
+    = yield
